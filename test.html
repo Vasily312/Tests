@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="theme-title">Тестирование</h1>
+            <div class="progress">
+                Вопрос <span id="current-q">1</span>/<span id="total-q">0</span>
+            </div>
+            
+        </header>
+
+        <main>
+            <div class="question-block">
+                <h2 id="question-text">Загрузка вопроса...</h2>
+                <div id="answers" class="answers"></div>
+            </div>
+
+            <div id="explanation" class="explanation hidden">
+                <h3>Пояснение:</h3>
+                <p id="explanation-text"></p>
+                <button id="next-btn">Следующий вопрос</button>
+            </div>
+        </main>
+
+        <div class="navigation">
+            <button id="back-to-themes" onclick="location.href='index.html'">← Назад к темам</button>
+        </div>
+        <footer>
+            <p>Vasily L.</p>
+        </footer>
+    </div>
+    
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
